@@ -24,3 +24,12 @@
     @endforeach
 @endif
 <hr>
+<h2>Resultado questao 5</h2>
+@if (isset($nome) && isset($tipo))
+    <div style="border: solid 1px #000; width: 300px; height: 100px;">
+        <p>Nome do Livro: {{$nome}}</p>
+        <p>Tipo de pessoa: {{$tipo}}</p>
+        <p>Prazo de devolução: {{$tempo}} dias.</p>
+    </div>
+@endif
+<hr>

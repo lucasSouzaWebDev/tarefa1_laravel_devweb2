@@ -61,14 +61,10 @@ class Tarefa1Controller extends Controller
 
     public function questao5(Request $request)
     {
-        $notas = $request->post('nota');
-        $notaFinal = 0;
-        foreach ($notas as $nota){
-            $notaFinal += $nota;
-        }
-        
-        $media = ($notaFinal / count($notas)) >= 7.0;
-        return view('resultado', compact('media'));
+        $nome = $request->post('nome');
+        $tipo = $request->post('tipo');
+        $tempo = $tipo == 'professor' ? 10 : 7;
+        return view('resultado', compact('nome', 'tipo', 'tempo'));
     }
 
     public function questao6(Request $request)

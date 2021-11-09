@@ -82,23 +82,18 @@
 <form action="{{route('tarefa1.questao5')}}" method="post">
     @csrf
     <div>
-        <label for="nota1">Nota 1</label>
-        <input type="text" name="nota[]" id="nota1">
+        <label for="nome">Nome do livro:</label>
+        <input type="text" name="nome" id="nome">
     </div>
     <div>
-        <label for="nota2">Nota 2</label>
-        <input type="text" name="nota[]" id="nota2">
-    </div>
-    <div>
-        <label for="nota3">Nota 3</label>
-        <input type="text" name="nota[]" id="nota3">
-    </div>
-    <div>
-        <label for="nota4">Nota 4</label>
-        <input type="text" name="nota[]" id="nota4">
+        <label for="tipo">Tipo de pessoa:</label>
+        <select name="tipo" id="tipo">
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
+        </select>
     </div>
     <div style="margin-top: 10px;">
-        <button>Calcular</button>
+        <button>Emprestar</button>
     </div>
     
 </form>
