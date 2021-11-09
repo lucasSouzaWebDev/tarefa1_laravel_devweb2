@@ -1,0 +1,11 @@
+.custom-thumbnail{
+    height: 90px;
+}
+
+.main-container{
+    /* background: linear-gradient(to bottom, #19547b, #ffd89b); */
+}
+
+.btn-login:hover{
+    box-shadow: 0 0 5px #fff;
+}
