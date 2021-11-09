@@ -61,23 +61,19 @@
 <form action="{{route('tarefa1.questao4')}}" method="post">
     @csrf
     <div>
-        <label for="nota1">Nota 1</label>
-        <input type="text" name="nota[]" id="nota1">
+        <label for="valor1">Valor 1</label>
+        <input type="text" name="valores[]" id="valor1">
     </div>
     <div>
-        <label for="nota2">Nota 2</label>
-        <input type="text" name="nota[]" id="nota2">
+        <label for="valor2">Valor 2</label>
+        <input type="text" name="valores[]" id="valor2">
     </div>
     <div>
-        <label for="nota3">Nota 3</label>
-        <input type="text" name="nota[]" id="nota3">
-    </div>
-    <div>
-        <label for="nota4">Nota 4</label>
-        <input type="text" name="nota[]" id="nota4">
+        <label for="valor3">Valor 3</label>
+        <input type="text" name="valores[]" id="valor3">
     </div>
     <div style="margin-top: 10px;">
-        <button>Calcular</button>
+        <button>Buscar</button>
     </div>
     
 </form>

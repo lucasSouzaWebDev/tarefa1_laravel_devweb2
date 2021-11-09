@@ -47,21 +47,16 @@ class Tarefa1Controller extends Controller
 
     public function questao3(Request $request)
     {
-        $valores = $request->post('valores');
-        rsort($valores);        
-        return view('resultado', compact('valores'));
+        $valoresAsc = $request->post('valores');
+        rsort($valoresAsc);        
+        return view('resultado', compact('valoresAsc'));
     }
 
     public function questao4(Request $request)
     {
-        $notas = $request->post('nota');
-        $notaFinal = 0;
-        foreach ($notas as $nota){
-            $notaFinal += $nota;
-        }
-        
-        $media = ($notaFinal / count($notas)) >= 7.0;
-        return view('resultado', compact('media'));
+        $valoresDesc = $request->post('valores');
+        sort($valoresDesc);        
+        return view('resultado', compact('valoresDesc'));
     }
 
     public function questao5(Request $request)
