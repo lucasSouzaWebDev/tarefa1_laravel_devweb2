@@ -21,3 +21,8 @@ Route::post('/Estado/salvar', 'EstadoController@salvar');
 
 Route::get('tarefa1', 'Tarefa1Controller@index');
 Route::post('/tarefa1/questao1', 'Tarefa1Controller@questao1')->name('tarefa1.questao1');
+Route::post('/tarefa1/questao2', 'Tarefa1Controller@questao2')->name('tarefa1.questao2');
+Route::post('/tarefa1/questao3', 'Tarefa1Controller@questao3')->name('tarefa1.questao3');
+Route::post('/tarefa1/questao4', 'Tarefa1Controller@questao4')->name('tarefa1.questao4');
+Route::post('/tarefa1/questao5', 'Tarefa1Controller@questao5')->name('tarefa1.questao5');
+Route::post('/tarefa1/questao6', 'Tarefa1Controller@questao6')->name('tarefa1.questao6');

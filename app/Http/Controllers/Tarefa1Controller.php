@@ -22,4 +22,72 @@ class Tarefa1Controller extends Controller
         $media = ($notaFinal / count($notas)) >= 7.0;
         return view('resultado', compact('media'));
     }
+
+    public function questao2(Request $request)
+    {
+        $mes = ($request->post('mes') - 1);
+        $arrayMes = array(
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho',
+            'Julho',
+            'Agosto',
+            'Setembro',
+            'Outubro',
+            'Novembro',
+            'Dezembro',
+        );
+        return isset($arrayMes[$mes]) ? $arrayMes[$mes] : 'Não existe mês nesse número.';
+    }
+
+    public function questao3(Request $request)
+    {
+        $notas = $request->post('nota');
+        $notaFinal = 0;
+        foreach ($notas as $nota){
+            $notaFinal += $nota;
+        }
+        
+        $media = ($notaFinal / count($notas)) >= 7.0;
+        return view('resultado', compact('media'));
+    }
+
+    public function questao4(Request $request)
+    {
+        $notas = $request->post('nota');
+        $notaFinal = 0;
+        foreach ($notas as $nota){
+            $notaFinal += $nota;
+        }
+        
+        $media = ($notaFinal / count($notas)) >= 7.0;
+        return view('resultado', compact('media'));
+    }
+
+    public function questao5(Request $request)
+    {
+        $notas = $request->post('nota');
+        $notaFinal = 0;
+        foreach ($notas as $nota){
+            $notaFinal += $nota;
+        }
+        
+        $media = ($notaFinal / count($notas)) >= 7.0;
+        return view('resultado', compact('media'));
+    }
+
+    public function questao6(Request $request)
+    {
+        $notas = $request->post('nota');
+        $notaFinal = 0;
+        foreach ($notas as $nota){
+            $notaFinal += $nota;
+        }
+        
+        $media = ($notaFinal / count($notas)) >= 7.0;
+        return view('resultado', compact('media'));
+    }
 }
