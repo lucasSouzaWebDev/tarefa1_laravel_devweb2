@@ -69,13 +69,11 @@ class Tarefa1Controller extends Controller
 
     public function questao6(Request $request)
     {
-        $notas = $request->post('nota');
-        $notaFinal = 0;
-        foreach ($notas as $nota){
-            $notaFinal += $nota;
+        $numero = $request->post('numero');
+        $tabuada = array();
+        foreach (range(1,10) as $number){
+            $tabuada[$number] = $numero * $number;
         }
-        
-        $media = ($notaFinal / count($notas)) >= 7.0;
-        return view('resultado', compact('media'));
+        return view('resultado', compact('tabuada', 'numero'));
     }
 }

@@ -33,3 +33,10 @@
     </div>
 @endif
 <hr>
+<h2>Resultado questao 6</h2>
+@if (isset($tabuada))
+    @foreach ($tabuada as $key => $tab)
+        <p>{{$numero}} * {{$key}} = {{$tab}}</p>
+    @endforeach
+@endif
+<hr>
